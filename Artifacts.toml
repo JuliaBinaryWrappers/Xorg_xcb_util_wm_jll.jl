@@ -1,0 +1,89 @@
+[[Xorg_xcb_util_wm]]
+arch = "armv7l"
+git-tree-sha1 = "dff03036fdb23ef0fd00f398310604930ddb38bb"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "a92afb84257fe52a77d8e7b269b1a2c5ae09e558ae6aedaa9c36b89a8d280d57"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.arm-linux-gnueabihf.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "x86_64"
+git-tree-sha1 = "27c9327efdedf3705e7044ff83c5793195974023"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "19480060e69d1b3eb030123aca035895dc2a3baf14a3279ce44281b8cc181e71"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.x86_64-linux-gnu.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "aarch64"
+git-tree-sha1 = "1bf6df03dc5e815615e1a8bf63c77cddcca05568"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "cc14f10641ad28f5de09963fa08cd4b8739a7c7b42e83f6784ff99b09121dc6f"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.aarch64-linux-gnu.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "i686"
+git-tree-sha1 = "fcb5126e4abcb87f806256de26639bc8173480e4"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "b332fae7a202f798e1798cd247956f4b30f62496c62d53873e9c97f99fa0a8c8"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.i686-linux-musl.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "aarch64"
+git-tree-sha1 = "11bc4479bacfb36c089804e41d3035780e4f0b4d"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "e6d7c98503a2ea2172dc1bf7ad2fa18faf299c8c033b0ea9e0b27e905e7d56e1"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.aarch64-linux-musl.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "x86_64"
+git-tree-sha1 = "42a139b0f38ea27233a7eda97cfb3f2bb8cd57b8"
+os = "freebsd"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "c1d67f3edf041073745efab13eea08aea61e8446bed450ab1fd23762e26c217b"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.x86_64-unknown-freebsd11.1.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "powerpc64le"
+git-tree-sha1 = "d488703db90b93f766190f45a4c0643c8e6dc45f"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "b190cb1ea4ca34719b34e16e6d74daae85927bf04385561e3d29f3dc7a4f6bd3"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.powerpc64le-linux-gnu.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "i686"
+git-tree-sha1 = "5dd061d6af2cbfe60fa8b5e78c5d65a9fcc89bf4"
+libc = "glibc"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "369374e59913d89557ceef2ccc01fc06fd883c613c32bd7a9626fd08efe248e5"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.i686-linux-gnu.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "x86_64"
+git-tree-sha1 = "17fe3fc9dd0845ea7276e1bddf29953db7030877"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "f5c50a5a959e62c73c8b6fa9ec5decd15839e826712545f1ae8de2438db7efeb"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.x86_64-linux-musl.tar.gz"
+[[Xorg_xcb_util_wm]]
+arch = "armv7l"
+git-tree-sha1 = "f32a100fec3009546d0a9e88977d6dd6efe18365"
+libc = "musl"
+os = "linux"
+
+    [[Xorg_xcb_util_wm.download]]
+    sha256 = "c538efad7cbe2aa1e46b10e0446479883815134fd064802744ab37befd1a5aa4"
+    url = "https://github.com/JuliaBinaryWrappers/Xorg_xcb_util_wm_jll.jl/releases/download/Xorg_xcb_util_wm-v0.4.1+0/Xorg_xcb_util_wm.v0.4.1.arm-linux-musleabihf.tar.gz"
