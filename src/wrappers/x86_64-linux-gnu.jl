@@ -39,23 +39,25 @@ const libxcb_icccm = "libxcb-icccm.so.4"
 Open all libraries
 """
 function __init__()
-    global prefix = abspath(joinpath(@__DIR__, ".."))
+    global artifact_dir = abspath(artifact"Xorg_xcb_util_wm")
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
     # We first need to add to LIBPATH_list the libraries provided by Julia
-    LIBPATH_list = [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)]
-    append!.(Ref(PATH_list), (Xorg_xcb_util_jll.PATH_list,))
-    append!.(Ref(LIBPATH_list), (Xorg_xcb_util_jll.LIBPATH_list,))
+    append!(LIBPATH_list, [joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)])
+    # From the list of our dependencies, generate a tuple of all the PATH and LIBPATH lists,
+    # then append them to our own.
+    foreach(p -> append!(PATH_list, p), (Xorg_xcb_util_jll.PATH_list,))
+    foreach(p -> append!(LIBPATH_list, p), (Xorg_xcb_util_jll.LIBPATH_list,))
 
-    global libxcb_ewmh_path = abspath(joinpath(artifact"Xorg_xcb_util_wm", libxcb_ewmh_splitpath...))
+    global libxcb_ewmh_path = normpath(joinpath(artifact_dir, libxcb_ewmh_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
     global libxcb_ewmh_handle = dlopen(libxcb_ewmh_path)
     push!(LIBPATH_list, dirname(libxcb_ewmh_path))
 
-    global libxcb_icccm_path = abspath(joinpath(artifact"Xorg_xcb_util_wm", libxcb_icccm_splitpath...))
+    global libxcb_icccm_path = normpath(joinpath(artifact_dir, libxcb_icccm_splitpath...))
 
     # Manually `dlopen()` this right now so that future invocations
     # of `ccall` with its `SONAME` will find this path immediately.
